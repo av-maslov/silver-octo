@@ -12,7 +12,7 @@
           j       * j looks like a down arrow
           ↓
 
- The cursor can be moved using the h, j, k, l keys, as shown
+ The **cursor **can be moved using the h, j, k, l keys, as shown
  above. The cursor / arrow keys will also work, but it is faster
  to use the hjkl keys as they are closer to the other keys you
  will be using. Try moving around to get a feel for hjkl.
