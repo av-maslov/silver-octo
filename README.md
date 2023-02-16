@@ -1,12 +1,12 @@
 - https://github.com/helix-editor/helix/blob/master/runtime/tutor
 
 
-# 1.3 DELETION
+## 1.3 DELETION
 
  **Type the d key to delete the character under the cursor.**
 
 
-# 2.1 MORE INSERT COMMANDS
+## 2.1 MORE INSERT COMMANDS
 
  As you saw, you can type i to enter Insert mode at the current
  position of the cursor. There are a few other ways you can
@@ -18,7 +18,8 @@
    **I - Insert at the start of the line.**
    **A - Insert at the end of the line.**
 
-# CHAPTER 2 RECAP
+
+## CHAPTER 2 RECAP
  
  * Type a to append to the selection.
 
@@ -32,48 +33,20 @@
 
 
 
+## 3.2 MORE MOTIONS
 
-
-
-
-
-
-=================================================================
-=                  3.1 MOTIONS AND SELECTIONS                   =
-=================================================================
-
- Type w to select forward until the next word.
-
- The d key doesn't actually delete the character at the cursor,
- it deletes all selected text. Your cursor is like a
- single-character selection.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Move to the beginning of a word that needs to be deleted.
- 3. Type w to select until the beginning of the next word.
- 4. Type d to delete the selection.
- 5. Repeat for all extra words in the line.
-
- --> This sentence pencil has vacuum extra words in the it.
-     This sentence has extra words in it.
-
-
-
-
-=================================================================
-=                     3.2 MORE MOTIONS                          =
-=================================================================
 
  As you saw, typing w moves the cursor forward until the start
  of the next word, selecting the text traversed. This is useful
  for moving around text and for selecting text to operate on.
 
  Some common motions include:
-   w - Move forward to before the beginning of the next word.
-   e - Move forward to the end of the current word.
-   b - Move backward to the beginning of the current word.
+ 
+   **w - Move forward to before the beginning of the next word.**
+   **e - Move forward to the end of the current word.**
+   **b - Move backward to the beginning of the current word.**
 
- To select the word under cursor, combine e and b.
+ **To select the word under cursor, combine e and b.**
 
  1. Move the cursor to the line marked '-->' below.
  2. Move to a 'd' letter.
@@ -104,24 +77,13 @@
 --> Helix is a one-of-a-kind "modal" text editor
 
 
-=================================================================
-=                    3.4 THE CHANGE COMMAND                     =
-=================================================================
 
- Type c to change the current selection.
+## 3.4 THE CHANGE COMMAND
+
+ **Type c to change the current selection.**
 
  The change command deletes the current selection and enters
  Insert mode, so it is a very common shorthand for di.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Move to the start of an incorrect word and type w to
-    select it.
- 3. Type c to delete the word and enter Insert mode.
- 4. Type the correct word.
- 5. Repeat until the line matches the line below it.
-
- --> This paper has heavy words behind it.
-     This sentence has incorrect words in it.
 
 
 
