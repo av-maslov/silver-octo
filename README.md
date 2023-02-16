@@ -1,142 +1,12 @@
 - https://github.com/helix-editor/helix/blob/master/runtime/tutor
 
-```
 
-=================================================================
-=                  1.1 BASIC CURSOR MOVEMENT                    =
-=================================================================
+# 1.3 DELETION
 
-          ↑
-          k       * h is on the left
-      ← h   l →   * l is on the right
-          j       * j looks like a down arrow
-          ↓
-
- The **cursor **can be moved using the h, j, k, l keys, as shown
- above. The cursor / arrow keys will also work, but it is faster
- to use the hjkl keys as they are closer to the other keys you
- will be using. Try moving around to get a feel for hjkl.
- Once you're ready, hold j to continue to the next lesson.
+ **Type the d key to delete the character under the cursor.**
 
 
-
-
-
-
-
-=================================================================
-=                      1.2 EXITING HELIX                        =
-=================================================================
-
- 1. Type : to enter Command mode. Your cursor will
-    move to the bottom of the screen.
- 2. Type q or quit and press Enter to exit Helix.
-
- Note: The quit command will fail if there are unsaved changes.
-       To force quit and DISCARD these changes, type q! or quit!.
-       You will learn how to save files later.
-
- To exit Command mode without entering a command, press Escape.
-
- Now, move on to the next lesson.
-
-
-
-
-
-
-
-=================================================================
-=                         1.3 DELETION                          =
-=================================================================
-
- Type the d key to delete the character under the cursor.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Move the cursor to each extra character, and type d to
-    delete it.
-
- --> Thhiss senttencee haass exxtra charracterss.
-     This sentence has extra characters.
-
- Once the sentence is correct, move on to the next lesson.
-
-
-
-
-
-
-
-
-=================================================================
-=                       1.4 INSERT MODE                         =
-=================================================================
-
- Type the i key to enter Insert mode.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Move to a place in the line which is missing text and type
-    i to enter Insert mode. Keys you type will now type text.
- 3. Enter the missing text.
- 4. Press Escape to exit Insert mode and return to Normal mode.
- 5. Repeat until the line matches the line below it.
-
- --> Th stce misg so.
-     This sentence is missing some text.
-
- Note: The status bar will display your current mode.
-       Notice that when you type i, 'NOR' changes to 'INS'.
-
-
-
-
-=================================================================
-=                      1.5 SAVING A FILE                        =
-=================================================================
-
- Type :w / :write to save a file.
-
- 1. Exit Helix using :q! as explained before, or open a new
-    terminal.
- 2. Open a file in Helix by running: hx FILENAME
- 3. Make some edits to the file.
- 4. Type : to enter Command mode.
- 5. Type w or write, and press Enter to save the file.
-
- You can also type wq or write-quit to save and exit.
-
- Note: You can optionally enter a filepath after the w / write
-       command in order to save to that path.
- Note: If there are any unsaved changes to a file, a plus [+]
-       will appear next to the file name in the status bar.
-
-
-
-=================================================================
-=                        CHAPTER 1 RECAP                        =
-=================================================================
-
- * Use the h,j,k,l keys to move the cursor.
-
- * Type : to enter Command mode.
-   * The q / quit and q! / quit! commands will exit Helix. The
-     former fails when there are unsaved changes. The latter
-     discards them.
-   * The w / write command will save the file.
-   * The wq / write-quit command will do both.
-
- * Type d to delete the character at the cursor.
-
- * Type i to enter Insert mode and type text. Press Escape to
-   return to Normal mode.
-
-
-
-
-
-=================================================================
-=                   2.1 MORE INSERT COMMANDS                    =
-=================================================================
+# 2.1 MORE INSERT COMMANDS
 
  As you saw, you can type i to enter Insert mode at the current
  position of the cursor. There are a few other ways you can
@@ -145,47 +15,15 @@
  Common examples of insertion commands include:
    i - Insert before the selection.
    a - Insert after the selection. (a means 'append')
-   I - Insert at the start of the line.
-   A - Insert at the end of the line.
+   **I - Insert at the start of the line.**
+   **A - Insert at the end of the line.**
 
- 1. Move to anywhere in the line marked '-->' below.
- 2. Type A (Shift-a), your cursor will move to the end of
-    the line and you will be able to type.
- 3. Type the text necessary to match the line below.
-
- --> This sentence is miss
-     This sentence is missing some text.
-
-=================================================================
-=                      2.2 OPENING LINES                        =
-=================================================================
-
- Type o to add a newline and insert below the cursor.
- Type O to add a newline and insert above the cursor.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Type o to open a line below and type your answer.
-
- --> What is the best editor?
-
-
-
-
-
-
-
-
-
-
-
-=================================================================
-=                        CHAPTER 2 RECAP                        =
-=================================================================
-
+# CHAPTER 2 RECAP
+ 
  * Type a to append to the selection.
 
- * Type I to enter Insert mode at the first non-whitespace
-   character at the start of a line.
+ * **Type I to enter Insert mode at the first non-whitespace
+   character at the start of a line.**
 
  * Type A to enter Insert mode at the end of a line.
 
@@ -1134,18 +972,3 @@ multiple cursors, they won't be uncommented but commented again.
    and multi-cursors before typing Ctrl-c.
    * Commented lines cannot be uncommented but commented again.
 
-
-
-
-
-
-
-
-
-
-
-
-
-=================================================================
- This tutorial is still a work-in-progress.
- More sections are planned.
