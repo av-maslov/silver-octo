@@ -1,27 +1,6 @@
 - https://github.com/helix-editor/helix/blob/master/runtime/tutor
 
 
-
-       .
-       ###x.        .|
-       d#####x,   ,v||
-        '+#####v||||||
-           ,v|||||+'.      _     _           _
-        ,v|||||^'>####    | |   | |   ___   | | (_) __  __
-       |||||^'  .v####    | |___| |  /   \  | |  _  \ \/ /
-       ||||=..v#####P'    |  ___  | /  ^  | | | | |  \  /
-       ''v'>#####P'       | |   | | |  ---  | | | |  /  \
-       ,######/P||x.      |_|   |_|  \___/  |_| |_| /_/\_\
-       ####P' "x|||||,
-       |/'       'x|||    A post-modern modal text editor.
-        '           '|
-
-
-                 Welcome to the Helix tutorial!
-        Press the j key until you reach the introduction.
-
-
-
 =================================================================
 =                        INTRODUCTION                           =
 =================================================================
