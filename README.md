@@ -1,27 +1,6 @@
 - https://github.com/helix-editor/helix/blob/master/runtime/tutor
 
-
-=================================================================
-=                        INTRODUCTION                           =
-=================================================================
-                                                                 
- Welcome to the Helix editor! Helix is different from editors
- you might be used to in that it is modal, meaning that it has
- different modes for editing text. The primary modes you will
- use are Normal mode and Insert mode. While in Normal mode, the
- keys you type won't actually type text. Instead, they will
- perform various actions with the text. This allows for more
- efficient editing. This tutor will teach you how you can make
- use of Helix's modal editing features. To begin, ensure your
- CapsLock key is not pressed and hold the j key until you reach
- the first lesson.
-
-
-
-
-
-
-
+```
 
 =================================================================
 =                  1.1 BASIC CURSOR MOVEMENT                    =
