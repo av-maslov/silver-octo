@@ -32,7 +32,6 @@
 
 
 
-
 ## 3.2 MORE MOTIONS
 
 
@@ -55,26 +54,13 @@
 
 --> The Middle Kingdom.
 
-=================================================================
-=                     3.3 WORDS AND words                       =
-=================================================================
+
+## 3.3 WORDS AND words
 
  The w,e,b motions also have counterparts - W,E,B - which
  traverse WORDS instead of words. WORDS are only separated by
  whitespace, whereas words can be separated by other characters
  in addition to whitespace.
-
- 1. Move the cursor to the beginning of the line marked with '-->'.
- 2. Type w repeatedly to select individual words until you
-    reach the end of the line.
- 3. Note that 'one-of-a-kind' required 7 keystrokes to be
-    traversed. '"modal"' required 3 keystrokes.
- 4. Move the cursor back to beginning of the line marked '-->'.
- 5. Type W repeatedly to select individual WORDS.
- 6. Note that 'one-of-a-kind' and '"modal"' have been selected
-    both with one keystroke each.
-
---> Helix is a one-of-a-kind "modal" text editor
 
 
 
@@ -88,163 +74,59 @@
 
 
 
-=================================================================
-=                   3.5 COUNTS WITH MOTIONS                     =
-=================================================================
+## 3.6 SELECT / EXTEND MODE
 
- Type a number before a motion to repeat it that many times.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Type 2w to move 2 words forward.
- 3. Type 3e to move to the end of the third word forward.
- 4. Type 2b to move 2 words backwards
- 5. Try the above with different numbers.
-
- --> This is just a line with words you can move around in.
-
-
-
-
-
-
-
-
-
-=================================================================
-=                    3.6 SELECT / EXTEND MODE                   =
-=================================================================
-
- Type v to enter Select mode.
+ **Type v to enter Select mode.**
  Type v again or Escape to return to Normal mode
  In Select mode every movement will extend the selection, as
  opposed to replacing it.
 
  1. Move the cursor to the line marked '-->' below.
- 2. Move to the F of FOO and type v2w to select the two words.
- 3. Type d to remove the two words. Notice d returns you to
+ 2. Move to the F of FOO and **type v2w to select the two words.**
+ 3. Type **d to remove the two words**. Notice d returns you to
     Normal mode.
- 4. Move to the B of BAZ and repeat the sequence to delete them.
-
- --> Remove the FOO BAR distracting words BAZ BIZ from this line.
 
 
 
 
+## 3.7 SELECTING LINES
 
-
-=================================================================
-=                     3.7 SELECTING LINES                       =
-=================================================================
-
- Type x to select a whole line. Type x again to select the next.
-
- 1. Move the cursor to the second line marked '-->' below.
- 2. Type x to select the line, and d to delete it.
- 3. Move to the fourth line.
- 4. Type x twice or type 2x to select 2 lines, and d to delete.
-
- --> 1) Roses are red,
- --> 2) Mud is fun,
- --> 3) Violets are blue,
- --> 4) I have a car,
- --> 5) Clocks tell time,
- --> 6) Sugar is sweet,
- --> 7) And so are you.
+ **Type x to select a whole line. Type x again to select the next.**
 
  Note : X works similarly to x although it doesn't extend to
       subsequent lines. X on an empty line does nothing.
 
-=================================================================
-=                   3.8 COLLAPSING SELECTIONS                   =
-=================================================================
 
- Type ; to collapse selections to single cursors.
+## 3.8 COLLAPSING SELECTIONS
 
- Sometimes, you want to deselect without having to move the
- cursor(s). This can be done using the ; key.
+ **Type ;** to collapse selections to single cursors.
 
- 1. Move the cursor to the line marked '-->' below.
- 2. Use the motions you have learned to move around the line,
-    and try using ; to deselect the text after it is selected
-    by the motions.
-
- --> This is an error-free line with words to move around in.
-
- Note: This works the same in Select mode.
- Note: Another related command is Alt-; which flips selections.
+ **Sometimes, you want to deselect without having to move the
+ cursor(s). This can be done using the ; key.**
+ 
+ Note: **Another related command is Alt-; which flips selections.**
 
 
 
+## 4.1 UNDOING
 
-=================================================================
-=                        CHAPTER 3 RECAP                        =
-=================================================================
-
- * Type w to select forward until the next word.
-   * Type e to select to the end of the current word.
-   * Type b to select backward to the start of the current word.
-   * Use uppercase counterparts, W,E,B, to traverse WORDS.
-
- * Type d to delete the entire selection.
-   * Type c to delete the selection and enter Insert mode.
-
- * Type a number before a motion to repeat it that many times.
-
- * Type v to enter Select mode, where all motions extend the
-   selection.
-
- * Type x to select the entire current line. Type x again to
-   select the next line.
-
- * Type semicolon ( ; ) to collapse selection.
-
-=================================================================
-=                         4.1 UNDOING                           =
-=================================================================
-
- Type u to undo. Type U to redo.
-
- 1. Move the cursor to the line marked '-->' below.
- 2. Move to the first error, and type d to delete it.
- 3. Type u to undo your deletion.
- 4. Fix all the errors on the line.
- 5. Type u several times to undo your fixes.
- 6. Type U (Shift-u) several times to redo your fixes.
-
- --> Fiix the errors on thhis line and reeplace them witth undo.
+ **Type u to undo. Type U to redo.**
 
 
-
-
-
-
-
-
-=================================================================
-=                 4.2 COPYING AND PASTING TEXT                  =
-=================================================================
+## 4.2 COPYING AND PASTING TEXT
 
  Type y to yank (copy) the selection.
  Type p to paste the yanked selection after the cursor.
  Type P to paste the yanked text before the cursor.
 
- 1. Move the cursor to the line marked '-->' below.
-    Make sure your cursor is on the "b" of banana.
- 2. Type w to select "banana" and y to yank it.
- 3. Move to the space between "2" and "3" and type p to paste.
- 4. Repeat between "3" and "4".
-
- --> 1 banana 2 3 4
-     1 banana 2 banana 3 banana 4
-
  Note: Whenever you delete or change text, Helix will copy the
        altered text. Use Alt-d / Alt-c instead to avoid this.
- Note: Helix doesn't share the system clipboard by default. Type
-       Space + y / p to yank / paste on the system's clipboard.
+ Note: Helix doesn't share the system clipboard by default. **Type
+       Space + y / p to yank / paste on the system's clipboard.**
 
-=================================================================
-=                     4.3 SEARCHING IN FILE                     =
-=================================================================
+
+
+## 4.3 SEARCHING IN FILE
 
  Type / to search forward in file, Enter to confirm search.
  Type n to go to the next search match.
@@ -264,33 +146,9 @@
 
 
 
-=================================================================
-=                        CHAPTER 4 RECAP                        =
-=================================================================
+## 5.1 MULTIPLE CURSORS
 
- * Type u to undo. Type U to redo.
-
- * Type y to yank (copy) text and p to paste.
-   * Use Space + y and Space + p to yank / paste on the system
-     clipboard.
-
- * Type / to search forward in file, and ? to search backwards.
-   * Use n and N to cycle through search matches.
-
-
-
-
-
-
-
-
-
-
-=================================================================
-=                     5.1 MULTIPLE CURSORS                      =
-=================================================================
-
- Type C to duplicate the cursor to the next suitable line.
+ **Type C to duplicate the cursor to the next suitable line.**
 
  1. Move the cursor to the first line marked '-->' below. Place
     the cursor somewhere past the '-->'.
@@ -299,20 +157,19 @@
     will now affect both cursors.
  3. Use Insert mode to correct the lines. The two cursors will
     fix both lines simultaneously.
- 4. Type , to remove the second cursor.
+ 4. **Type , to remove the second cursor.**
 
  --> Fix th two nes at same ime.
  -->
  --> Fix th two nes at same ime.
      Fix these two lines at the same time.
 
- Note: Press Alt-C to do the same above the cursor.
+ Note: **Press Alt-C to do the same above the cursor.**
 
-=================================================================
-=                    5.2 THE SELECT COMMAND                     =
-=================================================================
 
- Type s to select matches in the selection.
+## 5.2 THE SELECT COMMAND
+
+ **Type s to select matches in the selection.**
 
  1. Move the cursor to the line marked '-->' below.
  2. Type x to select the line.
@@ -322,17 +179,13 @@
  5. You can now type c and change 'apples' to something else,
     like 'oranges'.
  6. Press Escape to exit Insert mode.
- 7. Type , to remove the second cursor.
-
- --> I like to eat apples since my favorite fruit is apples.
-     I like to eat oranges since my favorite fruit is oranges.
+ 7. **Type , to remove the second cursor.**
 
 
 
 
-=================================================================
-=                    5.3 SELECTING VIA REGEX                    =
-=================================================================
+## 5.3 SELECTING VIA REGEX
+
 
  Like searching, the select command selects regular expressions,
  not just exact matches.
@@ -352,17 +205,16 @@
        then perform the steps explained above.
 
 
-=================================================================
-=                      5.4 ALIGN SELECTIONS                     =
-=================================================================
 
- Type & to align the contents of the selections.
+## 5.4 ALIGN SELECTIONS
+
+ **Type & to align the contents of the selections.**
 
  1. Move the cursor to the first line marked '-->' below. Place
     the cursor on the whitespace just after the arrow.
- 2. Type C four times or 4C.
- 3. Type W to select the numbers and brackets.
- 4. Type & to align the words.
+ 2. **Type C four times or 4C.**
+ 3. **Type W to select the numbers and brackets.**
+ 4. **Type & to align the words.**
 
  --> 97) lorem
  --> 98) ipsum
@@ -374,9 +226,9 @@
        selections - the end that moves. The other end is called
        the "anchor".
 
-=================================================================
-=                 5.5 SPLIT SELECTION INTO LINES                =
-=================================================================
+
+## 5.5 SPLIT SELECTION INTO LINES
+
 
  Press Alt-s to split the selection(s) on newlines.
 
@@ -396,9 +248,9 @@
 
 
 
-=================================================================
-=                        CHAPTER 5 RECAP                        =
-=================================================================
+
+## CHAPTER 5 RECAP
+
 
  * Type C to duplicate the cursor to the next suitable line
    and Alt-C for previous suitable line.
@@ -409,12 +261,6 @@
  * Type & to align selections.
 
  * Press Alt-s to split the selection into lines.
-
-
-
-
-
-
 
 
 
@@ -670,10 +516,6 @@ lines.
    the default being @.
 
  * Type q to replay a macro from @ or the selected register.
-
-
-
-
 
 
 
